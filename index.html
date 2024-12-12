@@ -7,9 +7,17 @@
     <link rel="stylesheet" href="assets/css/bootstrap-css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
-<body>
+<!-- Ao atualizar a página ou acessa-lá pela primeira vez, -->
+<!-- os dados serão carregados automáticamente pala função -->
+<!-- "aoCarregar()" atribuida ao atributo "onload". -->
+<body onload="aoCarregar()">
     <div class="container">
         <h1 class="text-center m-5 p-5 text-bg-danger rounded">BEM VINDO!!!</h1>
+        <!-- Botão para carregar os dados. -->
+        <button class="btn btn-primary" onclick="aoCarregar()">Carregar</button>
+    </div>
+    <!-- "div" onde os dados serão carregados dinâmicamente. -->
+    <div class="container" id="app">
     </div>
     <script src="assets/js/bootstrap-js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/script.js"></script>
